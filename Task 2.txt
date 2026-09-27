@@ -1,0 +1,26 @@
+48 ?- female(F).
+F = sara ;
+F = nora.
+
+50 ?-  male(_).
+true .
+
+52 ?- parent(G,P),parent(P,faisal).
+G = ali,
+P = muhammad .
+
+
+53 ?- parent(ahmad,Daughter), female(Daughter).
+Daughter = sara ;
+Daughter = nora ;
+false.
+
+ 54 ?- parent(P,ahmad), parent(P,muhammad).
+P = ali.
+
+55 ?- parent(P,Brother), parent(P,nora), male(Brother).
+P = ahmad,
+Brother = khan .
+
+
+
